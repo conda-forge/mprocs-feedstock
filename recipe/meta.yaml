@@ -1,5 +1,5 @@
 {% set name = "mprocs" %}
-{% set version = "0.6.4" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/pvolok/mprocs/archive/v{{ version }}.tar.gz
-  sha256: 7fdb5f3f8baaa82ccb7bf2193a7b843027cb133824a99475226524c105255077
+  sha256: 17dcb04d2d7caf8c1263b124cf5ecb145d28ac6d0717c2de78c988858c0572af
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
