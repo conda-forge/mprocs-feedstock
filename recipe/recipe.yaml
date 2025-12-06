@@ -22,7 +22,7 @@ requirements:
     - ${{ stdlib('c') }}
     - cargo-bundle-licenses
     - make
-    - python
+    - python >=${{ python_min }}
   host:
     - if: linux
       then: libxcb
