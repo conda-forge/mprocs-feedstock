@@ -20,9 +20,9 @@ build:
     content:
       - if: unix
         then:
-          - cargo auditable install --locked --no-track --bins --root ${{ PREFIX }} --path .
+          - cargo auditable install --locked --no-track --bins --root ${{ PREFIX }} --path src
         else:
-          - cargo auditable install --locked --no-track --bins --root %LIBRARY_PREFIX% --path .
+          - cargo auditable install --locked --no-track --bins --root %LIBRARY_PREFIX% --path src
       - cargo-bundle-licenses --format yaml --output ./THIRDPARTY.yml
 
 requirements:
