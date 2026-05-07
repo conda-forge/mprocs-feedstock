@@ -42,6 +42,7 @@ tests:
   - package_contents:
       bin:
         - mprocs
+        - dk
       strict: true
   - script:
       - mprocs --help
