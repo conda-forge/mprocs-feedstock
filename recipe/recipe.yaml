@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/pvolok/mprocs/archive/v${{ version }}.tar.gz
-  sha256: 62488726fc5539772a41863428026f51b4c03d5ac27c56191775e5a721ae90c2
+  sha256: 294fa02bfec7c73bc29448c55497ac46deda8b82bec259e492c51cfb67330c2d
 
 build:
   number: 0
@@ -42,7 +42,7 @@ tests:
   - package_contents:
       bin:
         - mprocs
-        - dk
+        - dekit
       strict: true
   - script:
       - mprocs --help
